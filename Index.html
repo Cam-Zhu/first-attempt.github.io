@@ -1,12 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My first website project built from scratch">
+    <link rel="stylesheet" href="style.css">
     <title>First Attempt</title>
   </head>
   <body>
-    <div>
-      <p>Welcome to my first website project made entirely without a CMS! Shocking that its taken me so long. You can contact me <a href="mailto:cameronnrobertson@gmail.com">here</a>.</p>
+    <div class="container">
+      <main>
+        <div class="welcome-box">
+          <p>Welcome to my first website project made entirely without a CMS!</p>
+          
+          <p>Shocking that its taken me so long. You can contact me: 
+            <a href="mailto:cameronnrobertson@gmail.com">here</a>.</p>
+        </div>
+        
+        <!-- Interactive button -->
+        <button 
+          onclick="changeColor()" 
+          class="color-button"
+          aria-label="Change background color">
+          Click me to change colors!
+        </button>
+      </main>
     </div>
+    <!-- Add JavaScript -->
+    <script>
+      function changeColor() {
+        const colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4'];
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        document.body.style.backgroundColor = randomColor;
+        // Announce color change for screen readers
+        document.querySelector('.color-button').setAttribute('aria-label', `Background color changed to ${randomColor}`);
+      }
+    </script>
   </body>
 </html>
