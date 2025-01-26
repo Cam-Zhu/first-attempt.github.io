@@ -15,10 +15,6 @@ A simple, interactive website built from scratch without any CMS. Features a cle
 - CSS3
 - JavaScript (Vanilla)
 
-## Live Demo
-
-You can view the live site [here]((https://cam-zhu.github.io/first-attempt.github.io/))
-
 ## Getting Started
 
 To run this project locally:
