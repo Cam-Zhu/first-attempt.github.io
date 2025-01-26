@@ -17,7 +17,7 @@ A simple, interactive website built from scratch without any CMS. Features a cle
 
 ## Live Demo
 
-You can view the live site [here](YOUR_GITHUB_PAGES_URL)
+You can view the live site [here]((https://cam-zhu.github.io/first-attempt.github.io/))
 
 ## Getting Started
 
